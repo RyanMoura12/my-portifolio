@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portifolio/static/css/main.4c62dc6b.css",
-    "main.js": "/my-portifolio/static/js/main.2e9b8faf.js",
+    "main.js": "/my-portifolio/static/js/main.0ccfb7f0.js",
     "static/media/sipas.png": "/my-portifolio/static/media/sipas.1c568b6c0a96f19222f4.png",
     "static/media/sicarp.png": "/my-portifolio/static/media/sicarp.dc1114e9a1bd71d72421.png",
     "static/media/siato.png": "/my-portifolio/static/media/siato.49b85c950e4737d0009a.png",
@@ -14,10 +14,10 @@
     "static/media/space-grotesk-vietnamese-400-normal.woff2": "/my-portifolio/static/media/space-grotesk-vietnamese-400-normal.799f8d2e84c3f8dd8ca1.woff2",
     "index.html": "/my-portifolio/index.html",
     "main.4c62dc6b.css.map": "/my-portifolio/static/css/main.4c62dc6b.css.map",
-    "main.2e9b8faf.js.map": "/my-portifolio/static/js/main.2e9b8faf.js.map"
+    "main.0ccfb7f0.js.map": "/my-portifolio/static/js/main.0ccfb7f0.js.map"
   },
   "entrypoints": [
     "static/css/main.4c62dc6b.css",
-    "static/js/main.2e9b8faf.js"
+    "static/js/main.0ccfb7f0.js"
   ]
 }
