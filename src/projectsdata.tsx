@@ -1,48 +1,48 @@
-import professor from "./assets/mock/professor.png";
-import orientador from "./assets/mock/orientador.png";
-import pokedex from "./assets/mock/pokedex.png";
-import flix from "./assets/mock/flix.png";
+import sicarp from "./assets/mock/sicarp.png";
+import sipas from "./assets/mock/sipas.png";
+import siato from "./assets/mock/siato.png";
+import pralicitar from "./assets/mock/pralicitar.png";
 
 const ProjectsData = [
   {
     id: 1,
-    img: professor,
+    img: sicarp,
     title: "Sicarp",
     description:
-      "Projeto desenvolvido por mim e pela minha equipe em 2021 para minha escola como TCC e estágio, com principal função dos professores aplicarem ocorrência nos alunos dentro da sala de aula através do celular.",
+      "Through SICARP, it is possible to monitor and audit information related to information, ensuring transparency and control over public purchases. Furthermore, it allows greater agility and efficiency in the management of these processes, avoiding rework and errors.",
     tool: "React · Firebase",
     github: "https://github.com/ogabrielbarbosa/TCC-Professor",
-    link: "https://tccprofessor.gabarbosa.com/",
+    link: "https://sicarp.diretoriodigital.net.br/",
   },
   {
     id: 2,
-    img: orientador,
-    title: "TCC - Orientador",
+    img: sipas,
+    title: "Sipas",
     description:
-      "Projeto desenvolvido por mim e pela minha equipe em 2021 para minha escola como TCC e estágio, com principal função dos orientadores receberem, organizarem as ocorrências dos alunos da escola.",
+      "It is a platform for recording the City Hall's main social services such as: TFD – Treatment Outside the Home, Basic Food Basket, Baby Kit, Medicines, etc.",
     tool: "React · Firebase",
     github: "https://github.com/ogabrielbarbosa/TCC-Orientador",
-    link: "https://tccorientador.gabarbosa.com/",
+    link: "https://sipas.diretoriodigital.net.br/",
   },
   {
     id: 3,
-    img: pokedex,
-    title: "Pokédex",
+    img: siato,
+    title: "Siato - Atendimento Social",
     description:
-      "Pokédex para procurar pokémons pelo nome ou número, mostrando e filtrando dados referente ao pokémon selecionado.",
+      "is a system that controls the bidding process, controlling all stages and generating documents that are used for each stage of the process.",
     tool: "React · TypeScript · PokeAPI",
     github: "https://github.com/ogabrielbarbosa/pokedex",
-    link: "https://pokedex.gabarbosa.com/",
+    link: "https://siato.diretoriodigital.net.br/",
   },
   {
     id: 4,
-    img: flix,
-    title: "Flix",
+    img: pralicitar,
+    title: "PraLicitar",
     description:
       "Plataforma de filmes em exibição, com acesso a informações do filme, como tempo de duração, gêneros, sinopse, entre outras coisas.",
     tool: "React · TheMovieDB",
     github: "https://github.com/ogabrielbarbosa/flix",
-    link: "https://flix.gabarbosa.com/",
+    link: "https://pralicitar.diretoriodigital.net.br/",
   },
 ];
 

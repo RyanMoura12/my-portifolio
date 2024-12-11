@@ -28,27 +28,27 @@ const About: React.FC<Props> = ({ toggleTheme }) => {
       {/* <Image src={photo} alt="Ryan Moura" /> */}
 
       <SubContainerAbout>
-        <SubTitle>Sobre mim</SubTitle>
+        <SubTitle>About me</SubTitle>
 
         <Description>
-          Comecei minha jornada na programação em 2021, quando ingressei em uma
-          escola técnica de informatíca, de lá pra cá descobri sou um apaixonado
-          por tecnologia e por desenvolvimento pessoal.
+          I started my programming journey in 2021, when I joined a IT technical
+          school, since then I discovered I am passionate technology and
+          personal development.
         </Description>
         <Description>
-          Atualmente estou estudando linguagens/frameworks como: Javascript,
+          I am currently studying languages/frameworks such as: Javascript,
           TypeScript, Laravel, Php, Vue.js, Graphql, React, React Native, NodeJS
-          entre outras tecnologias que uso para criar aplicações web/mobile de
-          alto nível e valor.
+          among other technologies that I use to create web/mobile applications
+          high level and value.
         </Description>
         <Description>
-          Meu foco é aprender novas coisas e aprimorar ainda mais as habilidades
-          que possuo, gosto sempre de estar em constante aprendizado e evoluindo
-          dia após dia, e agregando muito valor.
+          My focus is on learning new things and improving my skills even
+          further. that I have, I always like to be constantly learning and
+          evolving day after day, and adding a lot of value.
         </Description>
         <ContainerButtons>
           <ContactButton href="#contato">
-            <TextButton>Contato</TextButton>
+            <TextButton>Contact</TextButton>
           </ContactButton>
         </ContainerButtons>
       </SubContainerAbout>

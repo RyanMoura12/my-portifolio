@@ -36,8 +36,8 @@ const Contact: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <ContainerContact id="contato">
       <SubContainerTexts>
-        <TextTitle>Entrar em contato</TextTitle>
-        <SubTextTitle>Sinta-se à vontade para entrar em contato!</SubTextTitle>
+        <TextTitle>Get in touch</TextTitle>
+        <SubTextTitle>Feel free to get in touch!</SubTextTitle>
       </SubContainerTexts>
 
       <SubContainerContact>
@@ -56,7 +56,7 @@ const Contact: React.FC<Props> = ({ toggleTheme }) => {
           </Icon>
 
           <BoxTexts>
-            <LinkText>Seu email de contato</LinkText>
+            <LinkText>Your contact email</LinkText>
           </BoxTexts>
         </BoxContact>
 
@@ -78,7 +78,7 @@ const Contact: React.FC<Props> = ({ toggleTheme }) => {
           </Icon>
 
           <BoxTexts>
-            <LinkText>Seu telefone</LinkText>
+            <LinkText>Your Phone</LinkText>
           </BoxTexts>
         </BoxContact>
 

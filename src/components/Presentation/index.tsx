@@ -46,9 +46,9 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
       </ContainerMe>
 
       <Navigations>
-        <TextNavs href="#sobre">Sobre</TextNavs>
-        <TextNavs href="#projetos">Projetos</TextNavs>
-        <TextNavs href="#contato">Contato</TextNavs>
+        <TextNavs href="#sobre">About</TextNavs>
+        <TextNavs href="#projetos">Projects</TextNavs>
+        <TextNavs href="#contato">Contact</TextNavs>
         <li className="switchCenter">
           <Switch
             onChange={toggleTheme}

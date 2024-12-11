@@ -49,10 +49,10 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <ContainerProjects id="projetos">
       <SubContainerProjects>
-        <SubTitle>Projetos Desenvolvidos</SubTitle>
+        <SubTitle>Developed Projects</SubTitle>
 
         <ButtonSeeMore onClick={seeMore}>
-          <TextSeeMore>{controller ? "Ver menos" : "Ver mais"}</TextSeeMore>
+          <TextSeeMore>{controller ? "See less" : "See more"}</TextSeeMore>
         </ButtonSeeMore>
       </SubContainerProjects>
 
@@ -69,7 +69,7 @@ const Projects: React.FC<Props> = ({ toggleTheme }) => {
                 <TitleProject>{title}</TitleProject>
                 <SubContainerTitle>
                   <a target="blank" href={github}>
-                    <AiFillGithub color={colors.text} size={25} />
+                    {/* <AiFillGithub color={colors.text} size={25} /> */}
                   </a>
                   <a target="blank" href={link}>
                     <FiExternalLink color={colors.text} size={25} />
