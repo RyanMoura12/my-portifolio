@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/my-portifolio/static/css/main.4c62dc6b.css",
-    "main.js": "/my-portifolio/static/js/main.2d7169b2.js",
-    "static/media/flix.png": "/my-portifolio/static/media/flix.18554340e38e38c07d72.png",
-    "static/media/pokedex.png": "/my-portifolio/static/media/pokedex.9eea74207f6466a97283.png",
-    "static/media/orientador.png": "/my-portifolio/static/media/orientador.4e36ba62b134c026282a.png",
-    "static/media/professor.png": "/my-portifolio/static/media/professor.616f2809a0cfb8d2f6d7.png",
+    "main.js": "/my-portifolio/static/js/main.cfeac90d.js",
+    "static/media/sipas.png": "/my-portifolio/static/media/sipas.1c568b6c0a96f19222f4.png",
+    "static/media/sicarp.png": "/my-portifolio/static/media/sicarp.dc1114e9a1bd71d72421.png",
+    "static/media/siato.png": "/my-portifolio/static/media/siato.49b85c950e4737d0009a.png",
+    "static/media/pralicitar.png": "/my-portifolio/static/media/pralicitar.70c67929738519c74930.png",
     "static/media/hi.webp": "/my-portifolio/static/media/hi.49677921e83320900af5.webp",
     "static/media/contact.webp": "/my-portifolio/static/media/contact.a459827e8e79848b6db9.webp",
     "static/media/space-grotesk-all-400-normal.woff": "/my-portifolio/static/media/space-grotesk-all-400-normal.625410290983f0e0895a.woff",
@@ -14,10 +14,10 @@
     "static/media/space-grotesk-vietnamese-400-normal.woff2": "/my-portifolio/static/media/space-grotesk-vietnamese-400-normal.799f8d2e84c3f8dd8ca1.woff2",
     "index.html": "/my-portifolio/index.html",
     "main.4c62dc6b.css.map": "/my-portifolio/static/css/main.4c62dc6b.css.map",
-    "main.2d7169b2.js.map": "/my-portifolio/static/js/main.2d7169b2.js.map"
+    "main.cfeac90d.js.map": "/my-portifolio/static/js/main.cfeac90d.js.map"
   },
   "entrypoints": [
     "static/css/main.4c62dc6b.css",
-    "static/js/main.2d7169b2.js"
+    "static/js/main.cfeac90d.js"
   ]
 }
