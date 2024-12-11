@@ -40,7 +40,7 @@ const ProjectsData = [
     title: "PraLicitar",
     description:
       "Plataforma de filmes em exibição, com acesso a informações do filme, como tempo de duração, gêneros, sinopse, entre outras coisas.",
-    tool: "Vue.js · Laravel - GraphqlB",
+    tool: "Vue.js · Laravel - Graphql",
     github: "https://github.com/ogabrielbarbosa/flix",
     link: "https://pralicitar.diretoriodigital.net.br/",
   },
