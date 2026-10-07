@@ -1,90 +1,71 @@
-import React, { useContext, useState } from "react";
-import Switch from "react-switch";
-import { ThemeContext } from "styled-components";
-import ProjectsData from "../../projectsdata";
-
+import React from "react";
+import ProjectsData, { featuredProject } from "../../projectsdata";
+import { FiExternalLink, FiScissors, FiSmartphone } from "react-icons/fi";
 import {
-  ContainerProjects,
-  SubContainerProjects,
-  SubTitle,
-  ButtonSeeMore,
-  TextSeeMore,
-  ContainerAllProjects,
-  Project,
-  BoxImage,
-  Image,
-  ContainerTitle,
-  SubContainerTitle,
-  TitleProject,
-  Description,
-  Tools,
+  ContainerProjects, SubContainerProjects, SubTitle, ContainerAllProjects,
+  Project, BoxImage, Image, ContainerTitle, SubContainerTitle, TitleProject,
+  Description, Tools, Introduction, FeaturedProject, FeaturedContent,
+  FeaturedVisual, FeaturedLabel, FeaturedTitle, FeaturedDescription,
+  FeatureList, TechnologyList, ProjectIdentity,
 } from "./styles";
-
-import Media from "react-media";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { FiExternalLink } from "react-icons/fi";
-import { AiFillGithub } from "react-icons/ai";
 
 interface Props {
   toggleTheme(): void;
 }
 
-const Projects: React.FC<Props> = ({ toggleTheme }) => {
-  const { colors, title } = useContext(ThemeContext);
-  AOS.init();
-  const [controller, setController] = useState(false);
+const Projects: React.FC<Props> = () => (
+  <ContainerProjects id="projetos">
+    <SubContainerProjects>
+      <SubTitle>Sistemas e aplicativos</SubTitle>
+    </SubContainerProjects>
+    <Introduction>Projetos em que trabalhei, da gestão pública à experiência mobile.</Introduction>
 
-  function seeMore() {
-    setController(!controller);
-  }
-  let teste;
+    <FeaturedProject aria-labelledby="barber-title">
+      <FeaturedVisual aria-hidden="true">
+        <FiScissors size={56} />
+        <strong>@barber</strong>
+        <span><FiSmartphone /> Aplicativo mobile</span>
+      </FeaturedVisual>
+      <FeaturedContent>
+        <FeaturedLabel>Projeto em destaque · App</FeaturedLabel>
+        <FeaturedTitle id="barber-title">{featuredProject.title}</FeaturedTitle>
+        <FeaturedDescription>{featuredProject.description}</FeaturedDescription>
+        <FeatureList>
+          {featuredProject.features.map((feature) => (
+            <li key={feature.title}>
+              <h4>{feature.title}</h4>
+              <p>{feature.description}</p>
+            </li>
+          ))}
+        </FeatureList>
+        <TechnologyList aria-label="Tecnologias do aplicativo">
+          {featuredProject.technologies.map((technology) => <li key={technology}>{technology}</li>)}
+        </TechnologyList>
+      </FeaturedContent>
+    </FeaturedProject>
 
-  if (controller == true) {
-    teste = Infinity;
-  } else {
-    teste = 3;
-  }
-
-  return (
-    <ContainerProjects id="projetos">
-      <SubContainerProjects>
-        <SubTitle>Developed Projects</SubTitle>
-
-        <ButtonSeeMore onClick={seeMore}>
-          <TextSeeMore>{controller ? "See less" : "See more"}</TextSeeMore>
-        </ButtonSeeMore>
-      </SubContainerProjects>
-
-      <ContainerAllProjects>
-        {ProjectsData.slice(0, teste).map((item) => {
-          const { id, img, title, description, tool, link, github } = item;
-          return (
-            <Project key={id} data-aos="zoom-in">
-              <BoxImage>
-                <Image src={img} />
-              </BoxImage>
-
-              <ContainerTitle>
-                <TitleProject>{title}</TitleProject>
-                <SubContainerTitle>
-                  <a target="blank" href={github}>
-                    {/* <AiFillGithub color={colors.text} size={25} /> */}
-                  </a>
-                  <a target="blank" href={link}>
-                    <FiExternalLink color={colors.text} size={25} />
-                  </a>
-                </SubContainerTitle>
-              </ContainerTitle>
-
-              <Description>{description}</Description>
-              <Tools>{tool}</Tools>
-            </Project>
-          );
-        })}
-      </ContainerAllProjects>
-    </ContainerProjects>
-  );
-};
+    <ContainerAllProjects>
+      {ProjectsData.map(({ id, img, title, description, tool, link }) => (
+        <Project key={id}>
+          <BoxImage>
+            {img ? <Image src={img} alt={`Sistema ${title}`} loading="lazy" /> : (
+              <ProjectIdentity aria-hidden="true"><span>SISTEMA WEB</span><strong>{title}</strong></ProjectIdentity>
+            )}
+          </BoxImage>
+          <ContainerTitle>
+            <TitleProject>{title}</TitleProject>
+            {link && <SubContainerTitle>
+              <a target="_blank" rel="noopener noreferrer" href={link} aria-label={`Acessar ${title} (abre em nova aba)`}>
+                <FiExternalLink size={25} aria-hidden="true" />
+              </a>
+            </SubContainerTitle>}
+          </ContainerTitle>
+          <Description>{description}</Description>
+          <Tools>{tool}</Tools>
+        </Project>
+      ))}
+    </ContainerAllProjects>
+  </ContainerProjects>
+);
 
 export default Projects;
